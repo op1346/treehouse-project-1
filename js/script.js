@@ -22,7 +22,8 @@ let quotes = [
   },
   {
     quote: "Success is not final, failure is not fatal: it is the courage to continue that counts.",
-    source: "Winston Churchill"
+    source: "Winston Churchill",
+    tag: "Inspirational"
   },
   {
     quote: "What you get by achieving your goals is not as important as what you become by achieving your goals.",
@@ -72,12 +73,27 @@ function printQuote() {
   if (storeRandomQuote.year !== undefined) {
     storeString += `<span class="year">${storeRandomQuote.year}</span>`;
   }
+
+  //if statement for tag 
+  if (storeRandomQuote.tag !== undefined) {
+  	storeString += `, <span class="tag">${storeRandomQuote.tag}</span>`;
+  }
   //closing paragraph
   storeString += `</p>`;
   //return full HTML string
   document.getElementById('quote-box').innerHTML = storeString;
 }
+  
+//function to change colors
+function changeColor() {
+  //
+}
 
+//function to auto-refresh quotes 
+function autoChange() {
+  //use setInterval() for auto-refresh quotes 
+  setInterval(); 	
+}
 
 /***
  * click event listener for the print quote button
