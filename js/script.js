@@ -83,17 +83,7 @@ function printQuote() {
   //return full HTML string
   document.getElementById('quote-box').innerHTML = storeString;
 }
-  
-//function to change colors
-function changeColor() {
-  //
-}
 
-//function to auto-refresh quotes 
-function autoChange() {
-  //use setInterval() for auto-refresh quotes 
-  setInterval(); 	
-}
 
 /***
  * click event listener for the print quote button
